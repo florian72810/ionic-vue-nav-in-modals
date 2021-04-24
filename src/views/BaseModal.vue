@@ -13,6 +13,9 @@ export default defineComponent({
     IonNav
   },
   props: ["rootPage"],
+  created() {
+    console.log('BaseModal: created');
+  }
 });
 </script>
 

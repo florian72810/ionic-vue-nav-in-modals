@@ -48,6 +48,9 @@ export default defineComponent({
     return {
       goBack
     };
+  },
+  created() {
+    console.log('ModalHomeDetail: created');
   }
 });
 </script>

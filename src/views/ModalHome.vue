@@ -64,14 +64,20 @@ export default defineComponent({
     /**
      * close the modal dialog
      */
-    const closeModal = async () => {
-      await modalController.dismiss();
+    const closeModal = () => {
+      console.log('ModalHome: modal is dismissing');
+      modalController.dismiss().then(() => {
+        console.log('ModalHome: modal dismissed');
+      });
     };
 
     return {
       nextPage,
       closeModal
     };
+  },
+  created() {
+    console.log('ModalHome: created');
   }
 });
 </script>
